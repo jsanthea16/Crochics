@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Picks - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9c3;
+      color: #3e2a1a;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      font-weight:  bold;
+      letter-spacing: 1px;
+      background-color: transparent;
+    }
+
+    nav a {
+      color: #3e2a1a;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: #d17a00;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .buttons button {
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .buttons .primary {
+      background-color: #3e2a1a;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .buttons .primary:hover {
+      background-color: #5a3c28;
+    }
+
+    .buttons .secondary {
+      background-color: transparent;
+      border: 2px solid #3e2a1a;
+      color: #3e2a1a;
+    }
+
+    .buttons .secondary:hover {
+      background-color: #3e2a1a;
+      color: white;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .close:hover {
+      color: #f1f1f1;
+    }
+
+    .product-card img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="shop.html">SHOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT US</a>
+  </nav>
+  
+  <section class="top-picks">
+    <h2 class="section-title">Top Picks</h2>
+    <div class="top-picks-grid">
+      <div class="product-card">
+        <img src="images/bikini/mariposa.webp" alt="Mariposa" />
+        <h3>Mariposa</h3>
+        <p class="price">₱800.00</p>
+      </div>
+      <div class="product-card">
+        <img src="images/bouquets/Bouquet B1 (₱200).jpg" alt="Bouquet B1" />
+        <h3>Bouquet B1</h3>
+        <p class="price">₱200.00</p>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/Keychains.JPG" alt="Keychains" />
+        <h3>Keychains</h3>
+        <p class="price">₱50.00</p>
+      </div>
+      <div class="product-card">
+        <img src="images/tops/halter_top.webp" alt="Halter Top" />
+        <h3>Halter Top</h3>
+        <p class="price">₱350.00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.product-card img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

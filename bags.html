@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bags - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .close:hover {
+      color: #f1f1f1;
+    }
+
+    .catalogue-card img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .catalogue-card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  
+  <div style="padding: 1rem;">
+    <a href="shop.html" style="
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #f4d58d;
+      color: #4d2c2c;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    ">← Back to Shop</a>
+  </div>
+
+  <section class="container">
+    <h1>Bags</h1>
+    <p>Gracefully crafted crochet bags designed to add a touch of sophistication to every outfit.</p>
+
+    <div class="product-catalogue">
+      <!-- Product cards -->
+      <div class="catalogue-card">
+        <img src="images/bags/daisy_bag.webp" alt="Daisy Bag">
+        <div class="catalogue-info">
+          <h3>Daisy Bag</h3>
+          <p>₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/IMG_5629.PNG" alt="Chekered Bag">
+        <div class="catalogue-info">
+          <h3>Chekered Bag</h3>
+          <p>₱450.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/eceab9b1-2ce0-42d9-8abf-7b98fd377751.jpg" alt="Market Bag">
+        <div class="catalogue-info">
+          <h3>Market Bag</h3>
+          <p>₱500.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/mini_daisy.webp" alt="Mini Daisy">
+        <div class="catalogue-info">
+          <h3>Mini Daisy</h3>
+          <p>₱750.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/Strawberry bag.jpg" alt="Strawberry Bag">
+        <div class="catalogue-info">
+          <h3>Strawberry Bag</h3>
+          <p>₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/b6850fbf-cc4e-48ae-a617-cbcde96cfe5e.jpg" alt="Sunflower Bag">
+        <div class="catalogue-info">
+          <h3>Sunflower Bag</h3>
+          <p>₱650.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bags/6aafb12a-ffd8-4d87-bf22-5f532e44606d.jpg" alt="Two Way Bag">
+        <div class="catalogue-info">
+          <h3>Two Way Bag</h3>
+          <p>₱500.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox HTML -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    const images = document.querySelectorAll('.catalogue-card img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+

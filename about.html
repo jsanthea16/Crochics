@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Crochics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fffaf2;
+      --accent: #d17a00;
+      --text: #3e2a1a;
+      --subtle: #6e4b33;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9c3;
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1 1 300px;
+      background-color: #f4d58d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .left img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .right {
+      flex: 2 1 400px;
+      padding: 40px 30px;
+    }
+
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 26px;
+      color: var(--subtle);
+      margin-bottom: 25px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #4d392e;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .emoji {
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      .right {
+        padding: 25px 20px;
+      }
+
+      .title {
+        font-size: 22px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div style="padding: 1rem;">
+    <a href="home.html" style="
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #f4d58d;
+      color: #4d2c2c;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    ">← Back to Home</a>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <img src="images/tops/puff.jpg" alt="Owner Photo">
+    </div>
+    <div class="right">
+      <h1 class="title">Wear and use my creations and I will love you forever</h1>
+      <p class="description">
+        I am your <span class="highlight">Cebuana crocheter</span> who loves every stitch on my hook. I mainly make <span class="highlight">wearables, bouquets and accessories</span>, all handmade with care and a personal touch.
+        <br><br>
+        <span class="highlight">Highly customizable!</span> You can help bring your ideas to life through our crochet creations.
+        <br><br>
+        Every piece takes time, effort, and passion — so I truly appreciate your patience and support. When you wear something I’ve made, you’re not just wearing crochet, you’re wearing <span class="highlight">hours of dedication and heart</span>.
+        <br><br>
+        Let’s design your next outfit together.<span class="emoji"></span>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

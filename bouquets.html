@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bouquets - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .close:hover {
+      color: #f1f1f1;
+    }
+
+    .catalogue-card img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .catalogue-card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div style="padding: 1rem;">
+    <a href="shop.html" style="
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #f4d58d;
+      color: #4d2c2c;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    ">← Back to Shop</a>
+  </div>
+
+  <section class="container">
+    <h1>Bouquets</h1>
+    <p>Explore our sweet and stunning handmade crochet flower bouquets, perfect for gifts and special occasions!</p>
+    
+    <div class="product-catalogue">
+      <!-- Product cards -->
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet A (₱450).jpg" alt="Bouquet A">
+        <div class="catalogue-info">
+          <h3>Bouquet A</h3>
+          <p>₱450.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet A1 (₱200).jpg" alt="Bouquet A1">
+        <div class="catalogue-info">
+          <h3>Bouquet A1</h3>
+          <p>₱200.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet A2 (₱200).jpg" alt="Bouquet A2 ">
+        <div class="catalogue-info">
+          <h3>Bouquet A2</h3>
+          <p>₱200.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AA (₱2000).jpg" alt="Bouquet AA">
+        <div class="catalogue-info">
+          <h3>Bouquet AA</h3>
+          <p>₱2000.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AB (₱2100).jpg" alt="Bouquet AB">
+        <div class="catalogue-info">
+          <h3>Bouquet AB</h3>
+          <p>₱2100.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AC (₱2200).jpg" alt="Bouquet AC">
+        <div class="catalogue-info">
+          <h3>Bouquet AC</h3>
+          <p>₱2200.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AD(₱1400).jpg" alt="Bouquet AD">
+        <div class="catalogue-info">
+          <h3>Bouquet AD</h3>
+          <p>₱1400.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AE (₱1300).jpg" alt="Bouquet AE">
+        <div class="catalogue-info">
+          <h3>Bouquet AE</h3>
+          <p>₱1300.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AF (₱1200).jpg" alt="Bouquet AF">
+        <div class="catalogue-info">
+          <h3>Bouquet AF</h3>
+          <p>₱1200.00</p>
+        </div>
+      </div><div class="catalogue-card">
+        <img src="images/bouquets/Bouquet AH (₱1600).jpg" alt="Bouquet AH">
+        <div class="catalogue-info">
+          <h3>Bouquet AH</h3>
+          <p>₱1600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet B (₱500).jpg" alt="Bouquet B">
+        <div class="catalogue-info">
+          <h3>Bouquet B</h3>
+          <p>₱500.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet B (₱550).jpg" alt="Bouquet BB">
+        <div class="catalogue-info">
+          <h3>Bouquet BB</h3>
+          <p>₱550.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet B1 (₱200).jpg" alt="Bouquet B1">
+        <div class="catalogue-info">
+          <h3>Bouquet B1</h3>
+          <p>₱200.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet B2 (₱180).jpg" alt="Bouquet B2">
+        <div class="catalogue-info">
+          <h3>Bouquet B2</h3>
+          <p>₱180.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet C (₱550).jpg" alt="Bouquet C">
+        <div class="catalogue-info">
+          <h3>Bouquet C</h3>
+          <p>₱550.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet C1 (₱180).jpg" alt="Bouquet C1">
+        <div class="catalogue-info">
+          <h3>Bouquet C1</h3>
+          <p>₱180.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet C2 (₱200).jpg" alt="Bouquet C2">
+        <div class="catalogue-info">
+          <h3>Bouquet C2</h3>
+          <p>₱200.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet D (₱650).jpg" alt="Bouquet D">
+        <div class="catalogue-info">
+          <h3>Bouquet D</h3>
+          <p>₱650.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet E (₱650).jpg" alt="Bouquet E">
+        <div class="catalogue-info">
+          <h3>Bouquet E</h3>
+          <p>₱650.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet F (₱600).jpg" alt="Bouquet F">
+        <div class="catalogue-info">
+          <h3>Bouquet F</h3>
+          <p>₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet G (₱450).jpg" alt="Bouquet G">
+        <div class="catalogue-info">
+          <h3>Bouquet G</h3>
+          <p>₱450.00</p>
+        </div>
+      </div><div class="catalogue-card">
+        <img src="images/bouquets/Bouquet H (₱500).jpg" alt="Bouquet H">
+        <div class="catalogue-info">
+          <h3>Bouquet H</h3>
+          <p>₱500.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet I (₱600).jpg" alt="Bouquet I">
+        <div class="catalogue-info">
+          <h3>Bouquet I</h3>
+          <p>₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet L (₱450).jpg" alt="Bouquet J">
+        <div class="catalogue-info">
+          <h3>Bouquet J</h3>
+          <p>₱450.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/bouquets/Bouquet K (₱1000).jpg" alt="Bouquet K">
+        <div class="catalogue-info">
+          <h3>Bouquet K</h3>
+          <p>₱100.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox HTML -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    const images = document.querySelectorAll('.catalogue-card img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+

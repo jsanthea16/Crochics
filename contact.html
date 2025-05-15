@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9c3;
+      color: #3e2a1a;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      font-weight:  bold;
+      letter-spacing: 1px;
+      background-color: transparent;
+    }
+
+    nav a {
+      color: #3e2a1a;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: #d17a00;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .buttons button {
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .buttons .primary {
+      background-color: #3e2a1a;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .buttons .primary:hover {
+      background-color: #5a3c28;
+    }
+
+    .buttons .secondary {
+      background-color: transparent;
+      border: 2px solid #3e2a1a;
+      color: #3e2a1a;
+    }
+
+    .buttons .secondary:hover {
+      background-color: #3e2a1a;
+      color: white;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      color: #3e2a1a;
+      font-size: 20px;
+      transition: 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #d17a00;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section {
+        height: 300px;
+      }
+
+      .right-section h1 {
+        font-size: 36px;
+      }
+
+      .right-section p {
+        font-size: 14px;
+      }
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #f4d58d;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .contact-form a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--text-color);
+      color: white;
+      border-radius: 10px;
+      font-size: 1rem;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    .contact-form a:hover {
+      opacity: 0.85;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .socials a {
+      font-size: 2.5rem;
+      color: var(--text-color);
+      transition: 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: var(--secondary-color);
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="shop.html">SHOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT US</a>
+  </nav>
+
+  <section class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, suggestions, or custom requests — feel free to reach out!</p>
+
+    <!-- Google Form Button -->
+    <div class="contact-form">
+      <p>You can use our Google Form to send order, custom requests and messages or you can directly message on my social media pages below.</p>
+      <a href="https://docs.google.com/forms/d/1GMIVuQs6gNNdBc8C5ITDrPggmFuEpIlfzvsd_IO8J6s/viewform" target="_blank">
+        Open Order & Contact Form
+      </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="socials">
+      <a href="https://www.instagram.com/crochics.ph" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://web.facebook.com/profile.php?id=61572523657413" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@Crochics.ph" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="mailto:crochics.ph@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+</body>
+</html>

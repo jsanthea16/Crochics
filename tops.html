@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tops - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .close:hover {
+      color: #f1f1f1;
+    }
+
+    .catalogue-card img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .catalogue-card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  
+  <div style="padding: 1rem;">
+    <a href="shop.html" style="
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #f4d58d;
+      color: #4d2c2c;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    ">← Back to Shop</a>
+  </div>
+
+  <section class="container">
+    <h1>Tops</h1>
+    <p>Wrap yourself in comfort and charm with our cozy, stylish crochet tops—each piece handmade with love.</p>
+
+    <div class="product-catalogue">
+      <!-- Product cards -->
+      <div class="catalogue-card">
+        <img src="images/tops/ana_top.webp" alt="Ana Top">
+        <div class="catalogue-info">
+          <h3>Ana Top</h3>
+          <p>S - ₱300.00</p>
+          <p>M - ₱350.00</p>
+          <p>L - ₱400.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/ava_top.webp" alt="Ava Top">
+        <div class="catalogue-info">
+          <h3>Ava Top</h3>
+          <p>S - ₱500.00</p>
+          <p>M - ₱600.00</p>
+          <p>L - ₱700.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/butterfly_top.webp" alt="Butterfly Top">
+        <div class="catalogue-info">
+          <h3>Butterfly Top</h3>
+          <p>S - ₱300.00</p>
+          <p>M - ₱400.00</p>
+          <p>L - ₱500.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/delilah.webp" alt="Delilah">
+        <div class="catalogue-info">
+          <h3>Delilah</h3>
+          <p>S - ₱500.00</p>
+          <p>M - ₱600.00</p>
+          <p>L - ₱700.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/forest.jpg" alt="Forest Top">
+        <div class="catalogue-info">
+          <h3>Forest Top</h3>
+          <p>S - ₱500.00</p>
+          <p>M - ₱600.00</p>
+          <p>L - ₱700.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/halter_top.webp" alt="Halter Top">
+        <div class="catalogue-info">
+          <h3>Halter Top</h3>
+          <p>S - ₱300.00</p>
+          <p>M - ₱350.00</p>
+          <p>L - ₱400.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/houndsthatvest.webp" alt="Houndsthatvest">
+        <div class="catalogue-info">
+          <h3>Houndsthatvest</h3>
+          <p>S - ₱700.00</p>
+          <p>M - ₱800.00</p>
+          <p>L - ₱900.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/leilani.webp" alt="Leilani">
+        <div class="catalogue-info">
+          <h3>Leilani</h3>
+          <p>S - ₱400.00</p>
+          <p>M - ₱500.00</p>
+          <p>L - ₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/Madison Baby Doll Top.jpg" alt="Madison Baby Doll Top">
+        <div class="catalogue-info">
+          <h3>Madison Baby Doll Top</h3>
+          <p>S - ₱900.00</p>
+          <p>M - ₱1100.00</p>
+          <p>L - ₱1300.00</p>
+        </div>
+      </div><div class="catalogue-card">
+        <img src="images/tops/mary_top.webp" alt="Mary Top">
+        <div class="catalogue-info">
+          <h3>Mary Top</h3>
+          <p>S - ₱700.00</p>
+          <p>M - ₱800.00</p>
+          <p>L - ₱900.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/mimi_top.webp" alt="Mimi Top">
+        <div class="catalogue-info">
+          <h3>Mimi Top</h3>
+          <p>S - ₱350.00</p>
+          <p>M - ₱450.00</p>
+          <p>L - ₱550.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/multicolor_halter.webp" alt="Multicolor Halter Top">
+        <div class="catalogue-info">
+          <h3>Multicolor Halter Top</h3>
+          <p>S - ₱300.00</p>
+          <p>M - ₱350.00</p>
+          <p>L - ₱400.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/perry.webp" alt="Perry">
+        <div class="catalogue-info">
+          <h3>Perry</h3>
+          <p>S - ₱400.00</p>
+          <p>M - ₱500.00</p>
+          <p>L - ₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/puff.jpg" alt="Puff Sleeve">
+        <div class="catalogue-info">
+          <h3>Puff Sleeve</h3>
+          <p>S - ₱700.00</p>
+          <p>M - ₱800.00</p>
+          <p>L - ₱900.00</p>
+        </div>
+      </div><div class="catalogue-card">
+        <img src="images/tops/rori_top.webp" alt="Rori Top">
+        <div class="catalogue-info">
+          <h3>Rori Top</h3>
+          <p>S - ₱350.00</p>
+          <p>M - ₱450.00</p>
+          <p>L - ₱550.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/rosemary_top.webp" alt="Rosemary Top">
+        <div class="catalogue-info">
+          <h3>Rosemary Top</h3>
+          <p>S - ₱800.00</p>
+          <p>M - ₱900.00</p>
+          <p>L - ₱1100.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/sammy_set.webp" alt="Sammy Set">
+        <div class="catalogue-info">
+          <h3>Sammy Set</h3>
+          <p>S - ₱900.00</p>
+          <p>M - ₱1100.00</p>
+          <p>L - ₱1300.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/trina_top.webp" alt="Trina Top">
+        <div class="catalogue-info">
+          <h3>Trina Top</h3>
+          <p>S - ₱400.00</p>
+          <p>M - ₱500.00</p>
+          <p>L - ₱600.00</p>
+        </div>
+      </div>
+      <div class="catalogue-card">
+        <img src="images/tops/venus_top.webp" alt="Venus Top">
+        <div class="catalogue-info">
+          <h3>Venus Top</h3>
+          <p>S - ₱500.00</p>
+          <p>M - ₱600.00</p>
+          <p>L - ₱700.00</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Lightbox HTML -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    const images = document.querySelectorAll('.catalogue-card img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

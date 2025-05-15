@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Picks - Crochics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff6e9;
+      color: #3e2a1a;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      font-weight:  bold;
+      letter-spacing: 1px;
+      background-color: transparent;
+    }
+
+    nav a {
+      color: #3e2a1a;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: #d17a00;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .buttons button {
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .buttons .primary {
+      background-color: #3e2a1a;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .buttons .primary:hover {
+      background-color: #5a3c28;
+    }
+
+    .buttons .secondary {
+      background-color: transparent;
+      border: 2px solid #3e2a1a;
+      color: #3e2a1a;
+    }
+
+    .buttons .secondary:hover {
+      background-color: #3e2a1a;
+      color: white;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9c3;
+      margin: 0;
+    }
+
+    .shop-container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .shop-container h1 {
+      font-size: 2rem;
+      color: #4d2c2c;
+      margin-bottom: 1.5rem;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .category-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .category-card p {
+      padding: 0.8rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="shop.html">SHOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT US</a>
+  </nav>
+
+  <div class="shop-container">
+    <h1>Choose a Category</h1>
+    <div class="category-grid">
+      <a href="tops.html" class="category-card">
+        <img src="images/tops/mary_top.webp" alt="Tops">
+        <p>Tops</p>
+      </a>
+      <a href="bikini.html" class="category-card">
+        <img src="images/bikini/clara.webp" alt="Bikini">
+        <p>Bikini</p>
+      </a>
+      <a href="bags.html" class="category-card">
+        <img src="images/bags/daisy_bag.webp" alt="Bags">
+        <p>Bags</p>
+      </a>
+      <a href="bouquets.html" class="category-card">
+        <img src="images/bouquets/Bouquet AE (₱1300).jpg" alt="Bouquets">
+        <p>Bouquets</p>
+      </a>
+      <a href="accessories.html" class="category-card">
+        <img src="images/accessories/Bottle holder.jpg" alt="Accessories">
+        <p>Accessories</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
